@@ -9,16 +9,18 @@
 
 # 用法
 
+首先，打开common_def.py文件，根据你自己的环境修改路径。
+
 用法比较简单，指定sheet名和excel名：
 ```shell
 ./xls_pb_tool.py ITEM_CONF 道具表.xls
 ```
 
-excel文件：
+[excel文件](./samples/道具表.xls)
 
+![excel](./images/excel.png)
 
-生成的proto文件：
+[生成的proto文件](./samples/dataconfig_item_conf.proto)
 
-
-生成的text文件：
+[生成的text文件](./samples/dataconfig_item_conf.txt)
 

@@ -1,0 +1,9 @@
+
+package op.pb;
+
+// 行为
+message Action
+{
+    optional uint32 type            = 1; // 类型
+    repeated int32 params           = 2; // 参数
+}

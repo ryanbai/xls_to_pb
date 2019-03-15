@@ -1,0 +1,35 @@
+items {
+  id: 1
+  acquire_way: 1
+  acquire_way: 2
+  desc: "xxxx"
+  inter {
+    id: 10
+    param {
+      a: 1
+    }
+    actions {
+      type: 1
+      params: 2
+      params: 3
+    }
+  }
+  re {
+    a: 1
+  }
+  re {
+    a: 2
+  }
+}
+items {
+  id: 2
+  acquire_way: 4
+  acquire_way: 5
+  desc: "yyyyy"
+  inter {
+    id: 12
+  }
+  re {
+    a: 4
+  }
+}

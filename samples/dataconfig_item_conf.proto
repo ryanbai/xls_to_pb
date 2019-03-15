@@ -1,0 +1,47 @@
+/**
+* @file:   dataconfig_item_conf.proto
+* @author: ryanbai(bairuizhi@foxmail.com)
+* @brief:  这个文件是通过工具自动生成的，不要手动修改
+*/
+
+import "conf_struct.proto";
+package op.pb;
+
+message ITEM_CONF {
+    message RepeatType {
+        /***
+        重复参数1
+        ***/
+        optional uint32 a = 1 [default = 3];
+    }
+    message InterType {
+        message Param {
+            /***
+            参数1
+            ***/
+            optional uint32 a = 1 ;
+            /***
+            参数2
+            ***/
+            optional uint32 b = 2 ;
+        }
+        /***
+        内部id
+        ***/
+        optional uint32 id = 1 ;
+        optional Param param = 2 ;
+        repeated Action actions = 3 ;
+    }
+    /***
+    id
+    ***/
+    optional uint32 id = 1 ;
+    repeated RepeatType re = 22 ;
+    optional InterType inter = 21 ;
+    optional string desc = 20 ;
+    repeated uint32 acquire_way = 10 ;
+}
+
+message ITEM_CONF_ARRAY {
+    repeated ITEM_CONF items = 1;
+}
